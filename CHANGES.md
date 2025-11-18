@@ -65,3 +65,4 @@ To change the refresh interval (currently 30 seconds):
 - Edit `apps/crm_auto_refresh/crm_auto_refresh/public/js/leads_auto_refresh.js`
 - Change `const REFRESH_INTERVAL = 30000;` to your desired milliseconds
 
+

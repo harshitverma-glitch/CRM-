@@ -43,3 +43,4 @@
 - If JavaScript doesn't load, check browser console for errors
 - Make sure assets are built: `bench build --app crm_auto_refresh`
 
+

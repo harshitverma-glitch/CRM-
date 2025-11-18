@@ -82,3 +82,4 @@ It's better to keep your custom app in a separate repository so:
 - It's independent of your bench setup
 - Others can install it easily with `bench get-app`
 
+
