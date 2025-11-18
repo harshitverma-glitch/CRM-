@@ -11,20 +11,28 @@
 1. **Get the app from GitHub:**
    ```bash
    cd ~/frappe-bench
-   bench get-app https://github.com/YOUR_USERNAME/crm_auto_refresh.git
+   bench get-app https://github.com/harshitverma-glitch/CRM-.git
+   ```
+   
+   **Note:** If you get a build error during `get-app`, it's okay - we'll fix it in the next steps.
+
+2. **Add app to apps.txt (if not already added):**
+   ```bash
+   # Check if app is in apps.txt
+   grep -q "crm_auto_refresh" ~/frappe-bench/sites/apps.txt || echo "crm_auto_refresh" >> ~/frappe-bench/sites/apps.txt
    ```
 
-2. **Install the app to your site:**
+3. **Install the app to your site:**
    ```bash
    bench --site YOUR_SITE_NAME install-app crm_auto_refresh
    ```
 
-3. **Build assets:**
+4. **Build assets:**
    ```bash
    bench build --app crm_auto_refresh
    ```
 
-4. **Restart bench:**
+5. **Restart bench:**
    ```bash
    bench restart
    ```
